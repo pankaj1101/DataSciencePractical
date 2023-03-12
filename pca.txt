@@ -1,0 +1,14 @@
+> data=iris[1:4]
+> c=cov(data)
+> e=eigen(c)
+> e$values
+> e$vectors
+>pca=princomp(data,cor="False")
+> pca$loadings[,1:4]
+> summary(pca)
+> biplot(pca)
+> screeplot(pca)
+> screeplot(pca,type="lines")
+>model=pca$loading[,1]
+> library(class)
+> install.packages("e1071")
